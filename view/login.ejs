@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Balises meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Metas pour les mobiles -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- Metas du site -->
+      <title>books store</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- CSS Bootstrap -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- CSS Responsive -->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- Icône de favori -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- CSS pour la barre de défilement personnalisée -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks pour les anciennes versions d'IE -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- Polices -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Owl Stylesheets -->
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!-- CSS pour FancyBox -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!-- Section principale du banner -->
+      <div class="banner_bg_main">
+         <!-- Section de l'en-tête -->
+         <div class="container">
+            <div class="header_section_top">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="custom_menu">
+                      <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#">All boooks</a></li>
+                        <li><a href="/ContactUs">contact us</a></li>
+                        <li><a href="/signin">sign in  </a></li>
+                        <li><a href="/signup">sign up</a></li>
+                    </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Section de connexion -->
+         <section class="h-100 bg-dark">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col">
+                  <div class="card card-registration my-4">
+                    <div class="row g-0">
+                      <div class="col-xl-6 d-none d-xl-block">
+                        <img src="images/image.jpg"
+                          alt="Sample photo"
+                          class="img-fluid"
+                          style="border-top-left-radius: .25rem;
+                                border-bottom-left-radius: .25rem;
+                                width: 100%; /* Ajustez la largeur à 100% de son conteneur */
+                                height:110%; /* Gardez le ratio hauteur/largeur d'origine */" />
+
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="card-body p-md-5 text-black">
+                          <h3 class="mb-5 text-uppercase">Sign in </h3>
+                          <form method="post" action="/login">
+                            <div class="form-outline mb-4">
+                              <label class="form-label" for="email">Email</label>
+                              <input type="text" id="email" name="email" class="form-control form-control-lg" />
+                              
+                            </div>
+                            <div class="form-outline mb-4">
+                              <label class="form-label" for="password">Password</label>
+                              <input type="password" id="password" name="password" class="form-control form-control-lg" />
+                             
+                            </div>
+                            <div class="d-flex justify-content-end pt-3">
+                              <button type="button" class="btn btn-light btn-lg" id="signupButton">Inscription</button>
+                              <button type="submit" class="btn btn-warning btn-lg ms-2">Connexion</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Script pour rediriger vers la page d'inscription -->
+          <script>
+            var signupButton = document.getElementById('signupButton');
+            signupButton.addEventListener('click', function() {
+              window.location.href = '/signup';
+            });
+          </script>
+          <!-- Scripts JS -->
+          <script src="js/jquery.min.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <script src="js/jquery-3.0.0.min.js"></script>
+          <script src="js/plugin.js"></script>
+          <!-- Sidebar -->
+          <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+          <script src="js/custom.js"></script>
+      </body>
+</html>
